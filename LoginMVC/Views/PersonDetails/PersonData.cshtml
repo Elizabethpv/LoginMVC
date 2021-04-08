@@ -1,0 +1,21 @@
+﻿@model LoginMVC.Models.Person
+@{
+    ViewBag.Title = "PersonData";
+}
+
+<h2>PersonData</h2>
+
+@using (Html.BeginForm("View", "Person"))
+{
+    <label>Name</label>
+    @Html.TextBoxFor(m => m.Name);
+    <br />
+    <label>Phone Number</label>
+    @Html.TextBoxFor(m => m.PhoneNumber);
+
+    <input type="submit" value="Save" />
+
+
+}
+
+
